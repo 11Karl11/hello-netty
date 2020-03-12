@@ -1,4 +1,4 @@
-package com.ruhr.netty_learn;
+package com.ruhr;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
