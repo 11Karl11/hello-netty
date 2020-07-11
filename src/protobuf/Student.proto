@@ -1,0 +1,35 @@
+syntax ="proto2";
+
+package com.ruhr.netty.protobuf;
+
+option optimize_for =SPEED;
+
+option java_package="com.ruhr.netty.six";
+option java_outer_classname="MyDataInfo";
+
+
+message MyMessage{
+
+    enum DataType{
+
+    }
+
+}
+
+message Person{
+    optional string name=1;
+    optional int32 age=2;
+    optional string address=3;
+
+}
+
+
+message Dog{
+      optional string name=1;
+      optional int32 age=2;
+ }
+
+ message Cat{
+      optional string name=1;
+      optional int32 city=2;
+ }
