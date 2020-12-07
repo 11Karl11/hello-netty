@@ -6,9 +6,9 @@ import java.security.SecureRandom;
 public class NioTest1 {
     public static void main(String[] args) {
         IntBuffer buffer=IntBuffer.allocate(10);
-        for (int i=0;i<5;++i){
-            int randomNumber=new SecureRandom().nextInt(20);
-            buffer.put(randomNumber);
+        for (int i=5;i<10;++i){
+            // int randomNumber=new SecureRandom().nextInt(20);
+            buffer.put(i);
         }
 
         System.out.println("before flip limit:"+buffer.limit());

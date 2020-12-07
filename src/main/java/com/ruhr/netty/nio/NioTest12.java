@@ -51,6 +51,9 @@ public class NioTest12 {
                             break;
                         }
                         buffer.flip();
+                        // while (buffer.hasRemaining()){
+                        //     System.out.println(buffer.get());
+                        // }
                         socketChannel.write(buffer);
                         byteRead+=read;
 
