@@ -9,8 +9,8 @@ public class NioTest9 {
         RandomAccessFile randomAccessFile = new RandomAccessFile("NioTest9.txt", "rw");
         FileChannel fileChannel = randomAccessFile.getChannel();
         MappedByteBuffer mappedByteBuffer = fileChannel.map(FileChannel.MapMode.READ_WRITE,0,5);
-        mappedByteBuffer.put(0,(byte)'a');
-        mappedByteBuffer.put(3,(byte)'b');
+        mappedByteBuffer.put(0,(byte)'1');
+        mappedByteBuffer.put(3,(byte)'1');
 
     }
 }
